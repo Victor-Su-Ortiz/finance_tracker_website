@@ -94,7 +94,7 @@ export default function Demo() {
                   <span className="text-red-400">$1,847</span>
                 </div>
                 <div className="w-full bg-white/20 rounded-full h-2">
-                  <div className="bg-red-400 h-2 rounded-full" style={{width: '184%'}}></div>
+                  <div className="bg-red-400 h-2 rounded-full" style={{width: '100%'}}></div>
                 </div>
               </div>
               <div>
