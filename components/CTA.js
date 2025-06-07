@@ -286,24 +286,42 @@ export default function CTA() {
                 <select
                   value={formData.userType}
                   onChange={(e) => setFormData({...formData, userType: e.target.value})}
-                  className="w-full px-4 py-3 rounded-lg bg-white/10 backdrop-blur border border-white/20 text-white focus:outline-none focus:border-primary"
+                  className="w-full px-4 py-3 rounded-lg bg-white/10 backdrop-blur border border-white/20 text-white focus:outline-none focus:border-primary appearance-none cursor-pointer"
+                  style={{ 
+                    WebkitAppearance: 'none',
+                    MozAppearance: 'none',
+                    backgroundImage: `url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e")`,
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'right 1rem center',
+                    backgroundSize: '1em',
+                    paddingRight: '3rem'
+                  }}
                 >
-                  <option value="">How do you manage money?</option>
-                  <option value="individual">Just me</option>
-                  <option value="couple">With my partner</option>
-                  <option value="group">With friends/roommates</option>
+                  <option value="" className="bg-gray-900 text-white">How do you manage money?</option>
+                  <option value="individual" className="bg-gray-900 text-white">Just me</option>
+                  <option value="couple" className="bg-gray-900 text-white">With my partner</option>
+                  <option value="group" className="bg-gray-900 text-white">With friends/roommates</option>
                 </select>
 
-                <select
+               <select
                   value={formData.painPoint}
                   onChange={(e) => setFormData({...formData, painPoint: e.target.value})}
-                  className="w-full px-4 py-3 rounded-lg bg-white/10 backdrop-blur border border-white/20 text-white focus:outline-none focus:border-primary"
+                  className="w-full px-4 py-3 rounded-lg bg-white/10 backdrop-blur border border-white/20 text-white focus:outline-none focus:border-primary appearance-none cursor-pointer"
+                  style={{ 
+                    WebkitAppearance: 'none',
+                    MozAppearance: 'none',
+                    backgroundImage: `url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e")`,
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'right 1rem center',
+                    backgroundSize: '1em',
+                    paddingRight: '3rem'
+                  }}
                 >
-                  <option value="">What's your biggest financial challenge?</option>
-                  <option value="splitting">Splitting expenses fairly</option>
-                  <option value="tracking">Tracking who owes what</option>
-                  <option value="budgeting">Creating accurate budgets</option>
-                  <option value="communication">Talking about money</option>
+                  <option value="" className="bg-gray-900 text-white">What's your biggest financial challenge?</option>
+                  <option value="splitting" className="bg-gray-900 text-white">Splitting expenses fairly</option>
+                  <option value="tracking" className="bg-gray-900 text-white">Tracking who owes what</option>
+                  <option value="budgeting" className="bg-gray-900 text-white">Creating accurate budgets</option>
+                  <option value="communication" className="bg-gray-900 text-white">Talking about money</option>
                 </select>
 
                 <div className="flex gap-4">
