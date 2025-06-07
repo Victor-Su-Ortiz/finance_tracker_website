@@ -27,13 +27,14 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <motion.button
+           <motion.a
+              href="#cta"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-primary hover:bg-primary/80 px-8 py-4 rounded-full font-semibold flex items-center gap-2 mx-auto sm:mx-0"
+              className="bg-primary hover:bg-primary/80 px-8 py-4 rounded-full font-semibold flex items-center gap-2 mx-auto sm:mx-0 inline-flex"
             >
               Request Early Access <ArrowRight className="w-5 h-5" />
-            </motion.button>
+            </motion.a>
             {/* <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

@@ -33,9 +33,12 @@ export default function Navigation() {
                 {item.label}
               </a>
             ))}
-            <button className="bg-primary hover:bg-primary/80 px-6 py-2 rounded-full transition-all transform hover:scale-105">
+            <a 
+              href="#cta" 
+              className="bg-primary hover:bg-primary/80 px-6 py-2 rounded-full transition-all transform hover:scale-105 inline-block"
+            >
               Join Waitlist
-            </button>
+            </a>
           </div>
 
           <button 
