@@ -2,7 +2,7 @@
 
 import { motion, AnimatePresence } from 'framer-motion'
 import { useState, useEffect } from 'react'
-import { ArrowRight, Copy, Check, Users } from 'lucide-react'
+import { ArrowRight, Copy, Check, Users, Sparkles} from 'lucide-react'
 
 export default function CTA() {
   const [email, setEmail] = useState('')
@@ -244,14 +244,17 @@ export default function CTA() {
 
           {/* Link to advanced form */}
           {!showAdvancedForm && (
-            <button
+            <motion.button
               onClick={() => setShowAdvancedForm(true)}
-              className="text-sm text-gray-400 hover:text-primary transition-colors"
+              className="inline-flex items-center gap-2 px-6 py-2 rounded-full border border-primary/50 bg-primary/10 hover:bg-primary/20 hover:border-primary text-sm font-medium transition-all"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
             >
-              Want to tell us more about your needs? →
-            </button>
+              <Sparkles className="w-4 h-4 text-primary" />
+              Want to tell us more about your needs?
+              <ArrowRight className="w-4 h-4" />
+            </motion.button>
           )}
-
           {/* Advanced Form */}
           <AnimatePresence>
             {showAdvancedForm && (
