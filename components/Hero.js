@@ -58,7 +58,7 @@ export default function Hero() {
           <motion.div
             animate={{ y: [0, 20, 0] }}
             transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: 1 }}
-            className="absolute right-10 top-20 glass-effect p-4 rounded-lg"
+            className="absolute right-10 top-10 glass-effect p-4 rounded-lg"
           >
             <Bell className="w-6 h-6 mb-2 text-accent" />
             <p className="text-sm">John paid you back</p>
