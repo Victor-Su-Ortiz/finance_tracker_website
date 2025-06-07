@@ -56,10 +56,10 @@ export default function Demo() {
       content: (
         <div className="space-y-4">
           <div className="bg-primary/20 rounded-lg p-3 self-end max-w-[80%] ml-auto">
-            <p className="text-sm">How much do I owe Sarah?</p>
+            <p className="text-sm">How much does Sarch owe?</p>
           </div>
           <div className="bg-white/10 backdrop-blur rounded-lg p-3 max-w-[80%]">
-            <p className="text-sm mb-2">You owe Sarah $127.50 from 3 transactions:</p>
+            <p className="text-sm mb-2">Sarah owes $127.50 from 3 transactions:</p>
             <ul className="text-xs space-y-1 text-gray-300">
               <li>• Dinner at Nobu: $85.00</li>
               <li>• Uber to airport: $22.50</li>
